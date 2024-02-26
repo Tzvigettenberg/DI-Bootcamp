@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    background-color: #444420;
+}
+
+nav {
+    position: fixed;
+}
+
+.navbar {
+    background-color: #999;
+    color: #fff;
+    position: relative; /* Enable absolute positioning for children */
+    height: 10vh; /* Set a fixed height for the navbar */
+}
+
+.navbar-icon {
+    padding-left: 1vw;
+    position: absolute;
+    left: 5vw; /* Adjust as needed */
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.navbar img{
+    max-width: 10vw;
+    max-height: 10vh;
+}
+.navbar-icon h1 {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+.navbar-links {
+    position: absolute;
+    right: 5vw; /* Adjust as needed */
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.navbar-links a {
+    color: #868686;
+    text-decoration: none;
+    margin-left: 10px; /* Adjust padding as needed */
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.navbar-links a:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    border-color: #999; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-card-holder {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
+    text-align: center;
+}
+.product-card {
+    width: 32vw;
+    position: relative; /* Allow Product Sale Absolute */
+    display: inline-block; /* Display images inline */
+    vertical-align: middle; /* Align images vertically within the container */
+    margin: 20px 20px; /* Add some spacing between images */
+    border-radius: 15px;
+    border: 2px solid #999;
+    background-color: #999;
+    padding-bottom: 15px;
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+.product-card h3 {
+    font-size: 1vw;
+}
+
+.product-card-sale {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center; /* Center text horizontally */
+    color: white;
+    font-size: 1vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.product-card-new{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    background-color: rgb(33, 213, 87);
+    text-align: center; /* Center text horizontally */
+    color: white;
+    font-size: 1vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.product-card img {
+    max-height: 100%;
+    max-width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.product-card:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    border-color: #999; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+}
+
+.product-card button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+.product-card button:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    border-color: #999; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #999;
+    width: 100vw;
+    height: 5vh;
+}
+
+.hover-button-container{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    left: 0;
+    opacity: 0;
+    padding-top: 20%;
+}
+
+.hover-button{
+    margin: 1vw;
+    font-size: 1.5vw;
+    width: 3vw;
+}
+
+
+.hover-button-container:hover {
+    opacity: 1; /* Show the buttons on hover */
+}
+
+.login-container {
+    position: relative;
+    text-align: center;
+}
+
+.login-left-half-page {
+    position: absolute;
+    padding-top: 15vh;
+    width: 50%;
+    left: 0;
+    display: inline-block;
+    background-color: aqua;
+}
+
+.login-right-half-page {
+    position: absolute;
+    padding-top: 5vh;
+    width: 50%;
+    right: 0;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.login-right-half-page .user-icon{
+    font-size: 10vw;
+}
+
+.remember-me {
+    display: inline-block;
+}
+
+.line-box-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 30%; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background-color: black; /* Adjust color as needed */
+}
+
+.line-box-right {
+    top: 50%;
+    position: absolute;
+    right: 10%;
+    width: 30%; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background-color: black; /* Adjust color as needed */
+}
+
+.connect-with-container {
+    position: relative;
+    text-align: center;
+}
+
+.connect-with-container p {
+    display: inline-block;
+    padding: 0 10px; /* Adjust padding as needed */
+}
