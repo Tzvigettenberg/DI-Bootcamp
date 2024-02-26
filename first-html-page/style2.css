@@ -1,0 +1,36 @@
+.cat-senses-list{
+    margin-left: 10px;
+}
+
+.flex-container{
+    position: relative;
+}
+
+.inner-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red-box{
+    border: 2px solid red;
+    color: red;
+    text-align: center;
+    width: 90vw;
+    height: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+.image-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    width: auto;
+    height: auto;
+}

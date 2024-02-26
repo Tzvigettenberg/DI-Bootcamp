@@ -1,0 +1,45 @@
+        body{
+            background-color: rgb(166, 151, 154);
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+            border: solid 10px blue;
+        }
+
+        ul, li, a{
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            padding: 0px;
+            color: aliceblue;
+        }
+
+        nav{
+            background-color: blue;
+        }
+
+        #flag-stripe-red{
+            height: 100px;
+            width: 50px;
+            background-color: red;
+            display: inline-block;
+
+        }
+        #flag-stripe-white{
+            height: 100px;
+            width: 50px;
+            background-color: white;
+            display: inline-block;
+        }
+        #flag-stripe-blue{
+            height: 100px;
+            width: 50px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #flag{
+            display: inline-block;
+        }
