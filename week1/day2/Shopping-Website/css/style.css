@@ -1,5 +1,10 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #333333, #999999);
 }
@@ -63,23 +68,27 @@ nav {
     color: white;
 }
 
-.product-card-holder {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    position: relative;
-    text-align: center;
-}
 .product-card {
     width: 32vw;
+    min-width: 330px;
     position: relative; /* Allow Product Sale Absolute */
     display: inline-block; /* Display images inline */
     vertical-align: middle; /* Align images vertically within the container */
-    margin: 20px 20px; /* Add some spacing between images */
+    margin-left: 10vw; /* Add some spacing between images */
     border-radius: 15px;
-    border: 2px solid #b8965a;
+   /* border: 2px solid #b8965a; */
     background-color: #222222;
     padding-bottom: 15px;
+    scroll-snap-align: start;
 }
+
+/* Styles for screens smaller than 600 pixels */
+@media screen and (max-width: 600px) {
+    .product-card {
+        width: 85vw;
+    }
+}
+
 
 .product-card a {
     text-decoration: none;
@@ -176,6 +185,7 @@ nav {
 footer {
     position: absolute;
     background-color: #222222;
+    bottom: 0;
     width: 100vw;
     height: 20vh;
 }
@@ -203,7 +213,6 @@ footer {
 .login-container {
     position: relative;
     text-align: center;
-    height: 100vh;
 }
 
 .login-left-half-page {
@@ -212,7 +221,7 @@ footer {
     left: 0;
     display: inline-block;
     background: linear-gradient(to bottom, #333333, #999999);
-    height: 100vh;
+    height: 70vh;
 }
 
 .login-left-half-page p {
@@ -225,7 +234,7 @@ footer {
     width: 50%;
     right: 0;
     display: inline-block;
-    height: 100vh;
+    height: 70vh;
     background-color: #282828;
 }
 
@@ -308,4 +317,47 @@ footer {
 .login-left-half-page i {
     padding: 1vw;
     font-size: 3vw;
+}
+
+.tooltip-container {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+
+.tooltip-text {
+visibility: hidden;
+background-color: #333;
+color: #fff;
+text-align: center;
+border-radius: 4px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;
+transition: opacity 0.3s;
+white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+visibility: visible;
+opacity: 1;
+}
+
+.carousel {
+    margin: 15vh;
+}
+
+.carousel-inner {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For iOS smooth scrolling */
+    text-align: center;
 }
