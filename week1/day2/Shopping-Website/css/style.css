@@ -1,14 +1,15 @@
 body {
     margin: 0;
-    background-color: #444420;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #333333, #999999);
 }
 
 nav {
-    position: fixed;
+    position: relative;
 }
 
 .navbar {
-    background-color: #999;
+    background-color: #222222;
     color: #fff;
     position: relative; /* Enable absolute positioning for children */
     height: 10vh; /* Set a fixed height for the navbar */
@@ -39,16 +40,16 @@ nav {
 }
 
 .navbar-links a {
-    color: #868686;
-    text-decoration: none;
-    margin-left: 10px; /* Adjust padding as needed */
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 10px;
+    background-color: #997300;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .navbar-links a:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
+    background-color: #b8860b; /* Change background color on hover */
     border-color: #999; /* Change border color on hover */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
 }
@@ -75,17 +76,25 @@ nav {
     vertical-align: middle; /* Align images vertically within the container */
     margin: 20px 20px; /* Add some spacing between images */
     border-radius: 15px;
-    border: 2px solid #999;
-    background-color: #999;
+    border: 2px solid #b8965a;
+    background-color: #222222;
     padding-bottom: 15px;
 }
 
 .product-card a {
     text-decoration: none;
+    color: #b8965a;
 }
 
 .product-card h3 {
+    font-style: italic;
+    color: #b8965a;
     font-size: 1vw;
+}
+
+.product-card p {
+    text-emphasis: none;
+    color: white;
 }
 
 .product-card-sale {
@@ -95,7 +104,7 @@ nav {
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 50%;
-    background-color: red;
+    background-color: #997300;
     text-align: center; /* Center text horizontally */
     color: white;
     font-size: 1vw;
@@ -113,7 +122,7 @@ nav {
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 50%;
-    background-color: rgb(33, 213, 87);
+    background-color: #997300;
     text-align: center; /* Center text horizontally */
     color: white;
     font-size: 1vw;
@@ -127,7 +136,7 @@ nav {
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 0 0 #997300;
 	}
 
 	70% {
@@ -148,11 +157,9 @@ nav {
     border-top-left-radius: 15px;
 }
 
-.product-card:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
-    border-color: #999; /* Change border color on hover */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
-}
+/* .product-card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} */
 
 .product-card button {
     padding: 5px;
@@ -167,11 +174,10 @@ nav {
 }
 
 footer {
-    position: sticky;
-    bottom: 0;
-    background-color: #999;
+    position: absolute;
+    background-color: #222222;
     width: 100vw;
-    height: 5vh;
+    height: 20vh;
 }
 
 .hover-button-container{
@@ -183,7 +189,7 @@ footer {
     padding-top: 20%;
 }
 
-.hover-button{
+.hover-button {
     margin: 1vw;
     font-size: 1.5vw;
     width: 3vw;
@@ -197,32 +203,61 @@ footer {
 .login-container {
     position: relative;
     text-align: center;
+    height: 100vh;
 }
 
 .login-left-half-page {
     position: absolute;
-    padding-top: 15vh;
     width: 50%;
     left: 0;
     display: inline-block;
-    background-color: aqua;
+    background: linear-gradient(to bottom, #333333, #999999);
+    height: 100vh;
+}
+
+.login-left-half-page p {
+    font-size: 1.2vw;
+    color: black;
 }
 
 .login-right-half-page {
     position: absolute;
-    padding-top: 5vh;
     width: 50%;
     right: 0;
     display: inline-block;
-    background-color: #fff;
+    height: 100vh;
+    background-color: #282828;
 }
 
-.login-right-half-page .user-icon{
+.login-right-half-page .user-icon {
+    margin-top: 18vh;
     font-size: 10vw;
+    color: white;
+    padding-left: 6%;
+}
+
+.login-right-half-page h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+.login-right-half-page p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.login-right-half-page i {
+    color: white;
 }
 
 .remember-me {
-    display: inline-block;
+    font-size: 1.5vw;
+}
+
+.remember-me a {
+    text-decoration: none;
+    padding-left: 14vw;
+    font-size: 1.5vw;
 }
 
 .line-box-left {
@@ -251,4 +286,26 @@ footer {
 .connect-with-container p {
     display: inline-block;
     padding: 0 10px; /* Adjust padding as needed */
+}
+
+.login-field {
+    height: 3vh;
+    margin: 1vw;
+    width: 38vw;
+}
+
+.login-button {
+    width: 38vw;
+    height: 2.5vw;
+    margin-top: 5vh;
+    font-size: 1vw;
+}
+
+.login-left-half-page h1 {
+    margin-top: 20vh;
+}
+
+.login-left-half-page i {
+    padding: 1vw;
+    font-size: 3vw;
 }
