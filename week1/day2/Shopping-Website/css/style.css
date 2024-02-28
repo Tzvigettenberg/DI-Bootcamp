@@ -38,7 +38,7 @@ nav {
 
 .navbar-links {
     position: absolute;
-    right: 5vw; /* Adjust as needed */
+    right: 7vw; /* Adjust as needed */
     top: 50%;
     transform: translate(0,-50%);
 }
@@ -50,6 +50,7 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 1vw;
 }
 
 .navbar-links a:hover {
@@ -349,8 +350,8 @@ opacity: 1;
 .carousel {
     margin-top: 15vh;
     margin-bottom: 10vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .carousel-inner {
