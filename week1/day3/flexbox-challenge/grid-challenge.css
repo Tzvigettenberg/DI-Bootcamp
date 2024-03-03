@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    grid-template-rows: auto 1fr 3fr 150px;
+}
+
+.grid-item{
+
+}
+
+.blue{
+    background-color: blue;
+    grid-column: 1;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.green{
+    background-color: green;
+}

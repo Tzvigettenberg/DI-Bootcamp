@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    color: white;
+}
+
+.one {
+    height: 25%;
+    width: 99%;
+    background-color: #87d1ee;
+}
+
+.two {
+    height: 40%;
+    width: 50%;
+    background-color: #87d1ee;
+}
+
+.three {
+    height: 25%;
+    width: 99%;
+    background-color: #87d1ee;
+}
